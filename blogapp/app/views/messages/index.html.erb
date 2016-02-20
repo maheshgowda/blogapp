@@ -1,0 +1,6 @@
+<% @messages.each do |message| %>
+    Author: <%= message.name %> <br/>
+    <%= message.content %><br/><br/>
+<% end %>
+
+<%= link_to "New Message", new_message_path %>
